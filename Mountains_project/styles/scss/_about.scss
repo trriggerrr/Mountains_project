@@ -1,0 +1,121 @@
+.about {
+  &__wrapper {
+    padding: 6.25em 0;
+    display: flex;
+    gap: 7.187em;
+    align-items: center;
+  }
+  &__text-col {
+    position: relative;
+    flex-grow: 1;
+    margin-left: 150px;
+  }
+  &__count {
+    position: absolute;
+    left: -23.73417%;
+    top: -23.46241%;
+    font-size: clamp(100px, 21vw, 240px);
+    line-height: 100%;
+    opacity: 0.1;
+  }
+  &__img-col {
+    flex: 0 1 38.7141%;
+  }
+  &__text {
+    position: relative;
+    font-weight: 800;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    margin: 0 0 1.6875em 6em;
+    color: $accent;
+  }
+  &__text::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 72px;
+    background-color: #fbd784;
+    top: 50%;
+    left: -96px;
+  }
+  &__title {
+    font-family: $second-family;
+    font-weight: 600;
+    max-width: 555px;
+    line-height: 1.3;
+    font-size: clamp(30px, 5vw, 64px);
+    margin-bottom: calc(1.6875em / 2);
+  }
+  &__desc {
+    max-width: 632px;
+    line-height: 178%;
+    margin-bottom: 1.6875em;
+  }
+  &__link-wrapper {
+    display: flex;
+    gap: 0 1em;
+  }
+  &__link {
+    color: $accent;
+  }
+  &__svg-wrapper {
+    position: relative;
+    width: 24px;
+    height: 16px;
+    fill: none;
+    & svg {
+      position: absolute;
+      top: 50%;
+      fill: #fbd784;
+    }
+  }
+  &__img-wrap {
+    position: relative;
+    object-fit: cover;
+    padding-bottom: 127.20848%;
+    & img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .about {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: normal;
+    }
+    &__wrapper-second {
+      flex-direction: column-reverse;
+    }
+    &__text-col {
+      margin: 0 0 0 17%;
+    }
+    &__img-wrap {
+      padding-bottom: 82.20848%;
+      margin: 0 17%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    &__img-wrap {
+      padding-bottom: 127.20848%;
+      margin: 0;
+    }
+    &__wrapper {
+      gap: 4em;
+    }
+  }
+}
+@media (max-width: 496px) {
+  .about {
+    &__count {
+      top: -13.46241%;
+    }
+  }
+}
