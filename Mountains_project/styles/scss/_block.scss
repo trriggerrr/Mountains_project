@@ -1,0 +1,24 @@
+.title {
+  margin-bottom: calc(1.5em / 2);
+  font-family: $second-family;
+  font-size: clamp(12px, 2vw, 32px);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.link {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: $accent;
+  }
+  &:hover::before {
+    transition: 0.3s;
+    width: 100%;
+  }
+}

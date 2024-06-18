@@ -430,6 +430,31 @@ body {
   max-width: 1492px;
 }
 
+.title {
+  margin-bottom: 0.75em;
+  font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 2vw, 32px);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.link {
+  position: relative;
+}
+.link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: #fbd784;
+}
+.link:hover::before {
+  transition: 0.3s;
+  width: 100%;
+}
+
 .about__wrapper {
   padding: 6.25em 0;
   display: flex;
@@ -554,13 +579,6 @@ body {
 .footer__nav {
   display: flex;
   gap: 11.25em;
-}
-.footer__title {
-  margin-bottom: 0.75em;
-  font-family: "Chronicle Display", Arial, Helvetica, sans-serif;
-  font-size: clamp(12px, 2vw, 32px);
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
 }
 .footer__desc {
   line-height: 178%;

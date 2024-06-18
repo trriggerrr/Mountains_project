@@ -10,13 +10,6 @@
     gap: 11.25em;
   }
 
-  &__title {
-    margin-bottom: calc(1.5em / 2);
-    font-family: $second-family;
-    font-size: clamp(12px, 2vw, 32px);
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-  }
   &__desc {
     line-height: 178%;
     max-width: 303px;
