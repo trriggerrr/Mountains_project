@@ -1,0 +1,66 @@
+.header {
+  background-image: url(../../img/header-img/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200dvh;
+  .container {
+    @include container(1790px);
+  }
+  &__wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12.375em;
+  }
+  &__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.5em;
+    & .link {
+      color: $weiß;
+    }
+  }
+  &__link {
+    color: $weiß;
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  &__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    font-size: clamp(9px, 2vw, 17px);
+  }
+  &__text-guide {
+    margin: 0 0 2em 5.5em;
+  }
+  &__title {
+    font-size: clamp(44px, 5vw, 88px);
+    line-height: 114%;
+    max-width: 950px;
+    text-transform: capitalize;
+    margin-bottom: calc(1em / 2);
+  }
+  &__svg-wrapper {
+    width: 20px;
+    height: 20px;
+    & svg {
+      top: 20%;
+    }
+  }
+  &__link-wrapper {
+    margin-right: 44em;
+  }
+}

@@ -1,0 +1,23 @@
+@media (max-width: 1200px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 3.0625em;
+    }
+    &__nav {
+      gap: 0 14.25em;
+    }
+    &__desc {
+      max-width: 80%;
+      margin-bottom: 2.625em;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    &__nav {
+      gap: 0 7.25em;
+    }
+  }
+}

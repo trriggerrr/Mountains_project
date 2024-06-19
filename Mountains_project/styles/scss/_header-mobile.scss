@@ -1,0 +1,40 @@
+@media (max-width: 1363px) {
+  .header {
+    &__title {
+      max-width: 733px;
+    }
+    &__link-wrapper {
+      margin-right: 32.5em;
+    }
+  }
+}
+@media (max-width: 921px) {
+  .header {
+    &__title {
+      max-width: 483px;
+    }
+    &__link-wrapper {
+      margin-right: 18.5em;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    &__wrapper-text {
+      display: inline-block;
+    }
+    &__link-wrapper {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 590px) {
+  .header {
+    &__text-guide {
+      margin-left: 6.5em;
+    }
+    &__list {
+      display: none;
+    }
+  }
+}
