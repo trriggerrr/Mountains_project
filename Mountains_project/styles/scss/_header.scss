@@ -14,10 +14,10 @@
     justify-content: space-between;
     margin-bottom: 12.375em;
   }
-  &__wrapper-text {
+
+  &__wrap-text {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   &__list {
@@ -30,18 +30,14 @@
   &__link {
     color: $weiß;
   }
+
   &__account {
     display: flex;
     align-items: center;
     gap: 0.5em;
   }
-  &__wrapper-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   &__text {
-    font-size: clamp(9px, 2vw, 17px);
+    font-size: clamp(12px, 2vw, 17px);
   }
   &__text-guide {
     margin: 0 0 2em 5.5em;
@@ -60,7 +56,7 @@
       top: 20%;
     }
   }
-  &__link-wrapper {
-    margin-right: 44em;
+  &__btn-menu {
+    display: none;
   }
 }
